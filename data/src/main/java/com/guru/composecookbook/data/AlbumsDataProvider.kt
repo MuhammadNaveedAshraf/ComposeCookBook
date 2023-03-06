@@ -1,7 +1,8 @@
 package com.guru.composecookbook.data
 
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
 import com.guru.composecookbook.data.model.Album
-
 object AlbumsDataProvider {
 
     val listOfSpotifyHomeLanes = listOf(
@@ -183,4 +184,19 @@ object AlbumsDataProvider {
             genre = "Pop"
         ),
     )
+    val shows = mutableListOf<EPG>(
+        EPG(show = "Show # 1", width = 100.dp),
+        EPG(show = "Show # 2", width = 200.dp),
+        EPG(show = "Show # 3", width = 400.dp),
+        EPG(show = "Show # 4", width = 300.dp),
+        EPG(show = "Show # 5", width = 500.dp),
+        EPG(show = "Show # 6", width = 700.dp),
+        EPG(show = "Show # 7", width = 300.dp),
+        EPG(show = "Show # 8", width = 200.dp)
+    )
 }
+
+data class EPG(
+    val show: String? = "",
+    val width: Dp? = 50.dp
+)

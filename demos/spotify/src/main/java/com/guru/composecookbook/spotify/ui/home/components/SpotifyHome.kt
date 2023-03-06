@@ -81,7 +81,7 @@ fun HomeGridSection() {
     val items = remember { AlbumsDataProvider.albums }
     VerticalGrid {
         items.take(6).forEach {
-            SpotifyHomeGridItem(album = it)
+//            SpotifyHomeGridItem(album = it,0, { false })
         }
     }
 }

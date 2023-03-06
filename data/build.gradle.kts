@@ -4,3 +4,6 @@ plugins {
      */
     id("common-kotlin-module-configs-script-plugin")
 }
+dependencies {
+    implementation("androidx.compose.ui:ui-unit:1.3.3")
+}
